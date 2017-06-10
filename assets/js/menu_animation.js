@@ -1,0 +1,9 @@
+$(document).ready(function(){
+	$(".menu_button").click(function(){
+		$(".mobile_nav").fadeToggle(400);
+		$(".menu_button").toggleClass("close");
+	});
+	$(".mobile_nav").find("li").click(function(){
+		$(".menu_button").removeClass("close");
+	});
+});
